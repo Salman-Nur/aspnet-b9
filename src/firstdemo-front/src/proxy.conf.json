@@ -1,0 +1,8 @@
+{
+    "/v3/*": {
+    "target": "https://localhost:7173",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

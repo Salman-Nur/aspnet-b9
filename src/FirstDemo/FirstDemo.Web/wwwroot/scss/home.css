@@ -1,0 +1,22 @@
+﻿.myBtn {
+  background-color: green;
+}
+
+.myBtn2 {
+  background-color: green;
+}
+
+.myDiv {
+  background-color: aquamarine;
+}
+.myDiv button {
+  background-color: burlywood;
+}
+.myDiv button:hover {
+  background-color: coral;
+}
+
+.myPara {
+  background-color: green;
+  color: white;
+}

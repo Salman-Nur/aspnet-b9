@@ -1,0 +1,44 @@
+2024-03-15 11:38:20.329 +00:00 [INF] Application Starting...
+2024-03-15 11:38:20.362 +00:00 [INF] Connection String:Server=192.168.0.107,49172\SQLEXPRESS;Database=AspnetB9;User Id=aspnetb9;Password=123456;Trust Server Certificate=True;
+2024-03-15 11:38:20.907 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-03-15 11:38:20.980 +00:00 [WRN] No XML encryptor configured. Key {334efbed-9312-4c48-83b2-8a490a4cc51b} may be persisted to storage in unencrypted form.
+2024-03-15 11:38:39.346 +00:00 [WRN] Failed to determine the https port for redirect.
+2024-03-15 11:38:39.502 +00:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {e6ed754f-ca0c-4f9a-98ea-76728ad787a5} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2024-03-15 12:39:48.891 +00:00 [INF] Application Starting...
+2024-03-15 12:39:48.966 +00:00 [INF] Connection String:Server=192.168.0.107,49172\SQLEXPRESS;Database=AspnetB9;User Id=aspnetb9;Password=123456;Trust Server Certificate=True;
+2024-03-15 12:39:49.653 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-03-15 12:39:49.808 +00:00 [WRN] No XML encryptor configured. Key {49bd178f-8b8c-4158-a06e-0b1496d186bd} may be persisted to storage in unencrypted form.
+2024-03-15 12:39:56.082 +00:00 [WRN] Failed to determine the https port for redirect.
+2024-03-15 12:39:56.138 +00:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The key {334efbed-9312-4c48-83b2-8a490a4cc51b} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2024-03-15 12:39:56.160 +00:00 [INF] I am in index
+2024-03-15 12:39:58.637 +00:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The key {334efbed-9312-4c48-83b2-8a490a4cc51b} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2024-03-15 12:39:58.703 +00:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {334efbed-9312-4c48-83b2-8a490a4cc51b} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2024-03-15 12:40:12.250 +00:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The key {334efbed-9312-4c48-83b2-8a490a4cc51b} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
